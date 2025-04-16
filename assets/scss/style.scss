@@ -1,0 +1,99 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+
+  font-family: $font;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 25px;
+  background-color: $backgroundColor3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 90vw;
+  max-width: 350px;
+  padding: 20px;
+  background-color: $backgroundColor2;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  figure {
+    img {
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: $textColor1;
+    margin-top: 20px;
+  }
+
+  span {
+    color: $textColor2;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #dedede;
+    margin-top: 30px;
+  }
+
+  nav {
+    padding: 25px 0;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      li {
+        list-style-type: none;
+
+        a {
+          display: block;
+          padding: 15px;
+          background-color: $backgroundColor1;
+          border-radius: 8px;
+
+          color: $textColor1;
+          text-align: center;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all 0.1s;
+
+          &:hover {
+            color: #394b13;
+            background-color: $textColor2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  main {
+    max-width: 425px;
+    padding: 40px 40px 20px 40px;
+  }
+}
